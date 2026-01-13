@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">ListaTokarek</string>
+    <string-array name="marki">
+        <item>Toyota</item>
+        <item>Mazda</item>
+        <item>BMW</item>
+    </string-array>
+    <string-array name="modeleToyota">
+        <item>Corolla</item>
+        <item>GT86</item>
+        <item>Avensis</item>
+    </string-array>
+    <string-array name="modeleMazda">
+        <item>RX7</item>
+        <item>RX8</item>
+        <item>MX5</item>
+    </string-array>
+    <string-array name="modeleBMW">
+        <item>335i</item>
+        <item>535d</item>
+        <item>135i</item>
+    </string-array>
 </resources>

@@ -26,7 +26,8 @@
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/marka"/>
+            android:id="@+id/marka"
+            android:entries="@array/marki"/>
 
     </LinearLayout>
 
@@ -39,7 +40,7 @@
             android:layout_height="wrap_content"
             android:text="Model: "/>
 
-        <Spinner
+        <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/model"/>
@@ -54,7 +55,27 @@
     <SeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rocznik"/>
+        android:id="@+id/rocznik"
+        android:min="2000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="gravity"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:text="2026"/>
+
+    </LinearLayout>
 
 
     <CheckBox
@@ -63,37 +84,50 @@
         android:text="pierwszy wlascicel"
         android:id="@+id/wlasciciel"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Historia: "/>
-
-    <RadioGroup
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <RadioButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="bezwypadkowe"/>
+            android:text="Historia: "/>
 
-        <RadioButton
-            android:layout_width="wrap_content"
+        <RadioGroup
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="naprawione po wypadku"/>
+            android:id="@+id/historia">
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="do kasacji"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bezwypadkowe"/>
 
-    </RadioGroup>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="naprawione po wypadku"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="do kasacji"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="dodaj"
         android:id="@+id/dodaj"
-        app:cornerRadius="0dp"/>
+        app:cornerRadius="0dp"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista"/>
 
 </LinearLayout>
